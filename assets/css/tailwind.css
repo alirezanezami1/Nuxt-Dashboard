@@ -68,6 +68,12 @@
   }
 }
 
+@layer components {
+  .border-border {
+      border: 1px solid #0000
+  }
+}
+
 /* @layer base {
   * {
     @apply border-border;
@@ -76,3 +82,4 @@
     @apply bg-background text-foreground;
   }
 } */
+

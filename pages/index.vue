@@ -1,5 +1,8 @@
+<script lang="ts">
+
+</script>
 <template>
     <div>
-        hi
+      <Button>click me</Button>
     </div>
-</template>
+  </template>
