@@ -6,6 +6,5 @@
         <div class="hidden lg:flex">
             <SidebarMenu></SidebarMenu>
         </div>
-        <Logo></Logo>
     </div>
 </template>
