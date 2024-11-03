@@ -1,5 +1,5 @@
 <template>
     <div>
-        hi index sidebar
+        <Logo></Logo>
     </div>
 </template>
