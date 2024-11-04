@@ -1,5 +1,4 @@
 <script setup>
-import { NuxtLink } from '#build/components';
 
 
 const items = ref([
