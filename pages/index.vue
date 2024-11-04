@@ -1,7 +1,12 @@
-<script lang="ts">
-
+<script setup>
 </script>
+
 <template>
-    <div>
-    </div>
-  </template>
+  <div>
+    <header></header>
+    <main>
+      <section></section>
+    </main>
+    <footer></footer>
+  </div>
+</template>
