@@ -34,7 +34,7 @@ const items = ref([
     <div>
         <header class="flex items-center gap-2 p-4 hover:scale-[101%] transition cursor-pointer">
             <Logo></Logo>
-            <p class="font-bold">Nuxt-Finance</p>
+            <p class="font-bold text-black">Nuxt-Finance</p>
         </header>
         <div class="px-4 grow">
             <div class="grid gap-2">

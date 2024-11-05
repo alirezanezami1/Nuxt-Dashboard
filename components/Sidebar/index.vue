@@ -4,7 +4,7 @@ const open = ref(false)
 
 <template>
     <div >
-        <div class="flex lg:hidden z-50 items-center justify-between w-full h-full p-4">
+        <div class="flex lg:hidden z-50 items-center justify-between w-full h-full  p-4">
             <Logo></Logo>
             <Icon class="z-50 cursor-pointer left-2 top-2" size="30" name="majesticons:menu" @click="open = true"></Icon>
             <div v-if="open" class="fixed top-0 left-0 z-50 w-full h-full bg-white">

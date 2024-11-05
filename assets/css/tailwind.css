@@ -66,6 +66,8 @@
 
     --ring: 0 0% 83.1%;
   }
+
+
 }
 
 @layer components {
@@ -74,12 +76,18 @@
   }
 }
 
-/* @layer base {
-  * {
+@layer base {
+  /* * {
     @apply border-border;
-  }
+  } */
   body {
     @apply bg-background text-foreground;
   }
-} */
+  h1 {
+    @apply text-[36px] font-[700]
+  }
+  p {
+    @apply text-neutral-400 m-0
+  }
+}
 

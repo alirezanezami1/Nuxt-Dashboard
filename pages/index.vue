@@ -2,10 +2,21 @@
 </script>
 
 <template>
-  <div>
-    <header></header>
-    <main>
-      <section></section>
+  <div class="grid w-full h-screen gap-2">
+    <header class="flex items-start justify-between">
+      <div class="grow">
+        <p>Hi, welcome back...</p>
+        <h1>Dashboard</h1>
+      </div>
+      <div class="w-[120px] h-[36px] bg-neutral-200"></div>
+    </header>
+    <main class="grid gap-2">
+      <div class="flex items-center gap-3">
+        <div v-for="(item,index) in 3" :key="index" class="w-[120px] h-[36px] bg-neutral-200"></div>
+      </div>
+      <section>
+        <div class="w-full h-[360px] bg-neutral-200"></div>
+      </section>
     </main>
     <footer></footer>
   </div>
