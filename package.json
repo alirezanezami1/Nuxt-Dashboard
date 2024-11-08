@@ -15,6 +15,8 @@
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.454.0",
     "nuxt": "^3.13.2",
+    "nuxt-echarts": "^0.2.3",
+    "nuxt-highcharts": "^3.1.1",
     "radix-vue": "^1.9.8",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",

@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxt/icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@nuxt/icon',
+    'nuxt-echarts'
+  ],
 
   shadcn: {
     /**

@@ -1,5 +1,6 @@
 <script setup >
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+const loading = ref(false)
 const list = [
   {
     title : "Today",
@@ -7,14 +8,20 @@ const list = [
   },
   {
      title : "Week",
+     component: resolveComponent("TabsWeek")
   },
   {
      title : "Month",
+     component: resolveComponent("TabsMonth")
   },
   {
      title : "Year",
+     component: resolveComponent("TabsYear")
   }
 ]
+
+
+
 </script>
 
 <template>
@@ -35,7 +42,7 @@ const list = [
           </TabsTrigger>
         </TabsList>
         <TabsContent v-for="item , index in list" :key="index" :value="item.title">
-          {{ item.component }}
+          <highchart :options="options" />
         </TabsContent>
       </Tabs>
 
