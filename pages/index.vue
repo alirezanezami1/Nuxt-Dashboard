@@ -20,7 +20,83 @@ const list = [
   }
 ]
 
+let categories = ref({
+  'today' : [],
+  'week' : [],
+  'month' : [],
+  'year' : []
+})
+let currentCategories = ref(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep','Oct', 'Nov', 'Dec'])
 
+const options = computed(() => (
+  {
+    chart: {
+        type: 'line',
+        animation : {
+          enabled : false
+        }
+    },
+    legend : {
+      enabled : false
+    },
+    title: {
+        text: ''
+    },
+    xAxis: {
+      gridLineColor: 'transparent',
+        categories: currentCategories
+    },
+    yAxis: {
+       gridLineColor: 'transparent',
+        title: {
+            text: ''
+        }
+    },
+    plotOptions: {
+        line: {
+          marker : {
+            enabled : false
+          },
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: true
+        }
+    },
+    series: [{
+        name: 'Line1',
+        lineWidth : '4px',
+        color : {
+          linearGradient : {},
+          stops : [
+            [0, 'yellow'],
+            [.5 , 'green'],
+            [.88 , 'green'],
+            [1 , 'orange']
+          ]
+        },
+        data: [
+            16.0, 18.2, 23.1, 25.2, 27.1, 31.7, 34.11, 36.68, 39.2, 45.2,
+            38.0, 27.9
+        ]
+    }, {
+        name: 'Line2',
+        lineWidth : '4px',
+        color : {
+          linearGradient : {},
+          stops : [
+            [0, 'red'],
+            [.5 , 'green'],
+            [1 , 'yellow']
+          ]
+        },
+        data: [
+            -2.9, -3.6, -0.6, 4.8, 10.2, 14.5, 17.1, 16.5, 12.0, 6.5,
+            2.0, -0.9
+        ]
+    }]
+}
+))
 
 </script>
 
@@ -35,8 +111,8 @@ const list = [
     </header>
     <main class="grid gap-2">
       
-      <Tabs default-value="Today" class="w-[400px]">
-        <TabsList>
+      <Tabs default-value="Today" >
+        <TabsList class="w-[400px]">
           <TabsTrigger v-for="item , index in list" :key="index" :value="item.title">
             {{ item.title }}
           </TabsTrigger>

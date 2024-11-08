@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'shadcn-nuxt',
     '@nuxt/icon',
-    'nuxt-echarts'
+    'nuxt-highcharts'
   ],
 
   shadcn: {
