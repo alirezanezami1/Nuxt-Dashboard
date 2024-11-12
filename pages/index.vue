@@ -218,8 +218,8 @@ onMounted(() => {
             {{ item.title }}
           </TabsTrigger>
         </TabsList>
-        <TabsContent v-for="item , index in list" :key="index" :value="item.title">
-          <highchart :options="options" />
+        <TabsContent class="w-[100%]" v-for="item , index in list" :key="index" :value="item.title">
+          <highchart v-if="data.length > 0" :options="options" />
         </TabsContent>
       </Tabs>
 
